@@ -1,0 +1,54 @@
+<% include partials/header %>
+<div class="container">
+    <h1>
+        <center>Add Data</center>
+    </h1>
+
+    <div class="panel-body">
+
+        <form class="form-horizontal" action="add" method="post">
+
+            <div class="form-group">
+                <label for="string" class="col-sm-2 control-label">String</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="string" name="string" placeholder="String">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="integer" class="col-sm-2 control-label">Integer</label>
+                <div class="col-sm-10">
+                    <input type="integer" class="form-control" id="integer" name="integer" placeholder="Integer">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="float" class="col-sm-2 control-label">Float</label>
+                <div class="col-sm-10">
+                    <input type="float" class="form-control" id="float" name="float" placeholder="Float">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="date" class="col-sm-2 control-label">Date</label>
+                <div class="col-sm-10">
+                    <input type="date" class="form-control" id="date" name="date" placeholder="Date">
+                </div>
+            </div>
+            <div class="form-group">
+                <label style="font-size: 100%" class="col-sm-2 control-label">Boolean</label>
+                <div class="col-sm-10">
+                    <select class="form-control" id="boolean" name="boolean">
+                        <option value="TRUE">TRUE</option>
+                        <option value="FALSE">FALSE</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <button type="submit" class="btn btn-primary">Save</button>
+                </div>
+            </div>
+        </form>
+
+    </div>
+</div>
+<% include partials/footer %>
